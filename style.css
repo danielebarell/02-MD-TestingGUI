@@ -1,0 +1,11 @@
+:root{
+    --grey-default: #f8f3f3;
+}
+body{
+    margin: 0;
+    background-color: var(--grey-default);
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+

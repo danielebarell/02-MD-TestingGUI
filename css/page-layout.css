@@ -1,0 +1,11 @@
+.page-layout{
+    /*
+        page wrapper must fill the entire document
+    */
+    --page-height: 100vh;
+    --page-width: 100vw;
+    height: var(--page-height);
+    width: var(--page-width);
+    border: 2px dotted;
+
+}
