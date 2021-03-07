@@ -13,7 +13,7 @@ export class PerfectSquare{
      * @param {HTMLElement} target - the element to be squared
      * @param {number} margin - a positive integer to set the margin around the square, default value: 20
      * */
-    constructor(target, margin = 120){
+    constructor(target, margin = 20){
         this.__square = target;
         this.__margin = margin;
         console.log('Perfect Square constructor', this.__square, this.__margin);

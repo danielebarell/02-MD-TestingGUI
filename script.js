@@ -1,7 +1,8 @@
 import {PerfectSquare} from "./js/perfect-square.js";
 import {PageLayout} from "./js/page-layout.js";
 
-const perfectSquare = new PerfectSquare(document.querySelector('#shape-container'));
+const asideSize = 80;
+const perfectSquare = new PerfectSquare(document.querySelector('#shape-container'),asideSize);
 const pageLayout = new PageLayout(document.querySelector('#page'));
 function applySquare(){
     const w = document.body.clientWidth;
