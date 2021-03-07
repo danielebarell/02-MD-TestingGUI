@@ -7,5 +7,40 @@
     height: var(--page-height);
     width: var(--page-width);
     border: 2px dotted;
-
+    /*
+        just some colors for page layout different part
+    */
+    --color-bg-command: rgba(64,64,196,1);
+    --color-bg-utils: rgba(0,196,128,1);
+    --color-bg-footer: rgba(255,128,64,1);
+    /*
+        use grid method for laying out
+    */
+    display: grid;
+}
+.page-layout-vertical{
+    grid-template-areas:"cmd . utl"
+                      "cmd . utl"
+                      "ftr ftr ftr";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+.page-layout-horizontal{
+    grid-template-areas:"cmd"
+                      "."
+                      "utl"
+                      "ftr";
+    grid-template-rows: 1fr auto 1fr 1fr;
+}
+.page-layout > .command-panel{
+    background-color: var(--color-bg-command);
+    grid-area: cmd;
+}
+.page-layout > .utils-panel{
+    background-color: var(--color-bg-utils);
+    grid-area: utl;
+}
+.page-layout > .footer{
+    background-color: var(--color-bg-footer);
+    grid-area: ftr;
 }
